@@ -1,0 +1,16 @@
+<launch>
+
+	<arg name="node_name" default="object_dector_node"/>
+	<arg name="model_name" default=""/>
+	<arg name="label_name" default=""/>
+	<arg name="topic_src" default=""/>
+	<arg name="topic_dest" default=""/>
+
+	<param name="node_name" value="$(arg node_name)" />
+	<param name="model_name" value="$(arg model_name)" />
+	<param name="label_name" value="$(arg label_name)" />
+	<param name="topic_src"  value="$(arg topic_src)"/>
+	<param name="topic_dest"  value="$(arg topic_dest)"/>
+
+	<node pkg= "object_detector" name="$(arg node_name)" type="detect_ros.py"  output="screen"/> 
+</launch>
