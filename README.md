@@ -23,7 +23,7 @@ mettre votre lavel dans le dossier data/labels
 ## Fonctionnements:
 
 Pour faire fonctionner le package, on lance par exemple :  
-```roslaunch object_detector object_detector.launch node_name:="drone_1_detection" model_name:="model_faster_rcnn_resnet_custom_2" label_name:="labelmap.pbtxt" topic_src:="/drone_1/image" topic_dest:="drone_1_detection/image"```
+```roslaunch object_detector object_detector.launch node_name:="object_detector_node" model_name:="model_faster_rcnn_resnet_custom_2" label_name:="labelmap.pbtxt" topic_src:="/image_src" topic_dest:="/image_dest"```
 
 format d'entrée image raw  
 format de sortie image raw
