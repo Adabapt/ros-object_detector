@@ -26,9 +26,9 @@ format d'entrée image raw
 format de sortie image raw
 
 Le package se divise de la façon suivante:
-data -> données de modèle et de réseau
-launch -> les fichiers .launch
-scripts -> les nodes python
+\ndata -> données de modèle et de réseau
+\nlaunch -> les fichiers .launch
+\nscripts -> les nodes python
 src -> contient la lib de object_detection de tensorflow
 
 La node va donc initialiser le modèle et les données relatives à tensorflow.
